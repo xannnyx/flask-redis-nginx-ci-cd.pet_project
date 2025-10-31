@@ -25,3 +25,4 @@ jobs:
           docker run -d -p 5000:5000 --name test_app my-flask-app
           sleep 5
           curl -f http://localhost:5000 || (docker logs test_app && exit 1)
+
